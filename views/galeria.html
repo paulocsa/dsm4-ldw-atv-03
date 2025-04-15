@@ -4,13 +4,14 @@
 <h2 style="text-align: center">Galeria de Cachorros - DoggieSnap</h2>
 <br />
 
-<!-- Exibe uma imagem aleatória de cachorro da API -->
-<div class="text-center">
-    <h3>Imagem Aleatória de Cachorro:</h3>
-    <img src="{{ dog_image }}" alt="Imagem Aleatória de Cachorro" class="img-thumbnail" style="width: 80%; max-width: 400px;" />
-</div>
-
-<br />
+<!-- Exibe uma imagem aleatória de cachorro da API, apenas se houver uma imagem -->
+{% if dog_image %}
+    <div class="text-center">
+        <h3>Imagem Aleatória de Cachorro:</h3>
+        <img src="{{ dog_image }}" alt="Imagem Aleatória de Cachorro" class="img-thumbnail" style="width: 80%; max-width: 400px;" />
+    </div>
+    <br />
+{% endif %}
 
 <!-- Exibe as imagens da galeria de cachorros -->
 <div class="row">
