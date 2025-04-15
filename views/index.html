@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+  <div class="row">
+    <h2 class="text-center">Galeria de Cachorros - DoggieSnap</h2>
+    <div class="col"></div>
+    <div class="col">
+      <div class="container">
+        <div class="row">
+          <div class="d-grid gap-2 col-6 mx-auto" style="width: 100vh">
+            <a
+              href="{{url_for('galeria')}}"
+              class="btn btn-outline-secondary btn-lg"
+            >
+              <i class="bi bi-image"></i> Ver Galeria de Cachorros
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock content %}
